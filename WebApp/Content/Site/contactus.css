@@ -1,0 +1,202 @@
+﻿.marquee {
+    position: absolute;
+    animation: marquee 26s linear infinite;
+    -webkit-animation: marquee 26s linear infinite;
+    -moz-animation: marquee 26s linear infinite;
+    -ms-animation: marquee 26s linear infinite;
+    -o-animation: marquee 26s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateY(50%);
+    }
+
+    100% {
+        transform: translateY(-200%);
+    }
+}
+
+@-webkit-keyframes marquee {
+    0% {
+        -webkit-transform: translateY(50%);
+    }
+
+    100% {
+        -webkit-transform: translateY(-200%);
+    }
+}
+
+@-moz-keyframes marquee {
+    0% {
+        -moz-transform: translateY(50%);
+    }
+
+    100% {
+        -moz-transform: translateY(-200%);
+    }
+}
+
+@-ms-keyframes marquee {
+    0% {
+        -ms-transform: translateY(50%);
+    }
+
+    100% {
+        -ms-transform: translateY(-200%);
+    }
+}
+
+@-o-keyframes marquee {
+    0% {
+        -o-transform: translateY(50%);
+    }
+
+    100% {
+        -o-transform: translateY(-200%);
+    }
+}
+
+.credits-container {
+    min-height: 100%;
+    z-index: 1;
+    left: -8%;
+    text-align: center;
+    height: auto;
+    width: 100%;
+}
+
+.marquee h1 {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    line-height: 1;
+    margin-bottom: .3em;
+    letter-spacing: 2px;
+}
+
+.marquee ul,
+.marquee dl {
+    margin: 0 auto;
+    margin-bottom: 3em;
+    line-height: 1.8;
+    padding: 0;
+}
+
+    .marquee ul li {
+        display: block;
+    }
+
+    .marquee dl dt,
+    .marquee dl dd {
+        float: left;
+        padding: 0 10px;
+        margin: 0;
+    }
+
+    .marquee dl dt {
+        width: 50%;
+        text-align: right;
+    }
+
+    .marquee dl dd {
+        width: 50%;
+        text-align: left;
+    }
+
+#tv {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 100%;
+    overflow: hidden;
+    width: 50%;
+    position: absolute;
+    height: auto;
+    margin-top: 3%;
+}
+
+.square {
+    position: relative;
+    display: flex; /* could be float */
+}
+
+.sq-setter-w {
+    width: 100%;
+    height: auto;
+    z-index: 2;
+    position: relative;
+}
+
+.sq-content {
+    position: absolute;
+    z-index: 1;
+    top: 8%;
+    right: 10%;
+    bottom: 15%;
+    left: 10%;
+}
+
+/* just for display */
+.sq-setter-w + .sq-content {
+    background-color: black;
+}
+
+#console {
+    position: absolute;
+    width: 50%;
+    right: 0;
+    z-index: 1;
+    height: auto;
+}
+
+#nes {
+    margin-bottom: 0 !important;
+}
+
+#cable {
+    z-index: 1;
+    position: absolute;
+    left: 47%;
+    top: 16%;
+}
+
+@media screen and (max-width : 830px) {
+    #tv {
+        width: 100% !important;
+        position: relative !important;
+    }
+
+    #console {
+        width: 100% !important;
+    }
+
+    #cable {
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        left: 50%;
+        position: relative;
+    }
+
+    #nes {
+        margin-top: 0px !important;
+    }
+}
+
+.stopanimation {
+    animation: none !important;
+    -webkit-animation: none !important;
+    -moz-animation: none !important;
+    -ms-animation: none !important;
+    -o-animation: none !important;
+}
+
+#nespad {
+    -webkit-transform: scale(0.4);
+    -moz-transform: scale(0.4);
+    -ms-transform: scale(0.4);
+    -o-transform: scale(0.4);
+    transform: scale(0.4);
+}

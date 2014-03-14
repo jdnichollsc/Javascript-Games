@@ -1,0 +1,91 @@
+﻿@{
+    ViewBag.Title = "Contáctenos";
+}
+
+@section head{
+    <link href="~/Content/Site/contactus.css" rel="stylesheet" />
+    <link href="~/Content/Site/nes.css" rel="stylesheet" />
+    <link href="~/Content/Site/nespad.css" rel="stylesheet" />
+}
+
+<div id="tv">
+    <div class="square" style="width: 100%">
+        <img src="~/Content/img/tv.png" class="sq-setter-w" />
+        <div class="sq-content"></div>
+    </div>
+    <div class="credits-container marquee">
+        <h1>Director</h1>
+        <ul class="credits">
+            <li>Juan D. Nicholls</li>
+            <li>NICHOLLS</li>
+        </ul>
+        <h1>Actores</h1>
+        <dl>
+            <dt>Juan D. Escobar</dt>
+            <dd>Desarrollador</dd>
+        </dl>
+    </div>
+</div>
+<div id="console">
+    <input type="radio" name="nes-size" id="size1">
+    <input type="radio" name="nes-size" id="size2" checked>
+    <div id="nes">
+        <div class="nes-top">
+            <div class="lid">
+                <h1>Nintendo</h1>
+                <h2>ENTERTAINMENT SYSTEM</h2>
+            </div>
+            <div class="cartridge-slot">
+                <div class="cartridge-slot-border">
+                </div>
+                <div class="cartridge-slot-hole"></div>
+            </div>
+        </div>
+        <div class="nes-bottom">
+            <div class="power-box">
+                <input type="checkbox" id="power" />
+                <div class="reset"></div>
+                <label for="power" class="power"></label>
+                <div class="light"></div>
+            </div>
+        </div>
+        <div class="gamepads-slots">
+            <div class="gamepad-slot p1"></div>
+            <div class="gamepad-slot p2"></div>
+        </div>
+    </div>
+    <figure id="nespad">
+        <div class="cord"></div>
+        <section class="dpad-pane">
+            <div class="dpad-hole"></div>
+            <div id="dpad">
+                <canvas height="150" id="dpad-body" width="150"></canvas>
+                <button class="buttonpad" id="up"></button>
+                <button class="buttonpad" id="right"></button>
+                <button class="buttonpad" id="down"></button>
+                <button class="buttonpad" id="left"></button>
+            </div>
+        </section>
+        <section class="menu-pane">
+            <div class="labels">
+                <label class="select" for="select">Select</label>
+                <label class="start" for="start">Start</label>
+            </div>
+            <div class="buttons">
+                <button class="buttonpad select" id="select">Select</button>
+                <button class="buttonpad start" id="start">Start</button>
+            </div>
+        </section>
+        <section class="action-pane">
+            <div class="logo">Nintendo</div>
+            <div class="buttons">
+                <label class="label">B<button class="buttonpad" id="b"></button></label>
+                <label class="label">A<button class="buttonpad" id="a"></button></label>
+            </div>
+        </section>
+    </figure>
+</div>
+
+@section scripts{
+    <script src="~/Scripts/Site/contactus.js"></script>
+}

@@ -1,0 +1,985 @@
+﻿@import url(http://fonts.googleapis.com/css?family=Roboto:700);
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+@import url(http://fonts.googleapis.com/css?family=Holtwood+One+SC);
+
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    -o-box-sizing:border-box;
+}
+/* zocial */
+[class*="entypo-"]:before {
+    font-family: 'entypo', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    background: #222222;
+}
+
+#content {
+    position: relative;
+    min-height: 895px;
+    max-height: 895px;
+    background: #222222;
+    width: 100%;
+    overflow:hidden;
+}
+
+header {
+    background: #222222;
+    padding: 20px;
+}
+
+    header h1 {
+        margin: 0;
+        font-family: 'Holtwood One SC', serif;
+        color: white;
+        font-size: 50px;
+        text-shadow: 0px 3px 0px #7f8c8d;
+    }
+
+.righthead {
+    position: absolute;
+    top: 30px;
+    right: 0px;
+    width: 445px;
+}
+
+.srchFld {
+    border: 0;
+    border-radius: 7px;
+    padding: 0 17px;
+    padding-right: 55px;
+    float: left;
+    width: 380px;
+    border-bottom: 5px solid #bdc3c7;
+    height: 60px;
+    font-family: 'Roboto', sans-serif;
+    color: #7f8c8d;
+    font-size: 19px;
+}
+
+    .srchFld:focus {
+        outline-color: transparent;
+    }
+
+.ico {
+    position: absolute;
+    right: 70px;
+    top: 14px;
+    font-size: 35px;
+    color: #7f8c8d;
+    cursor: pointer;
+}
+
+#menu {
+    position: relative;
+    height: 58px;
+    z-index: 3;
+    background: #222222;
+}
+
+#wall {
+    background: linear-gradient(to right top, rgba(242, 56, 90, 0) 0.48544em, #f2385a 0.48544em, #f2385a, #d00e31 1.31877em, rgba(242, 56, 90, 0) 1.31877em) 0 0, linear-gradient(to left top, rgba(242, 56, 90, 0) 0.48544em, #f2385a 0.48544em, #f2385a, #d00e31 1.31877em, rgba(242, 56, 90, 0) 1.31877em) 0 0, linear-gradient(to right bottom, rgba(242, 56, 90, 0) 0.48544em, #d00e31 0.48544em, #f2385a, #f2385a 1.31877em, rgba(242, 56, 90, 0) 1.31877em) 2.5em 0, linear-gradient(to left bottom, rgba(242, 56, 90, 0) 0.48544em, #d00e31 0.48544em, #f2385a, #f2385a 1.31877em, rgba(242, 56, 90, 0) 1.31877em) 2.5em 0, linear-gradient(to right top, rgba(245, 165, 3, 0) 0.48544em, #f5a503 0.48544em, #f5a503, #c38302 1.31877em, rgba(245, 165, 3, 0) 1.31877em) 0 1em, linear-gradient(to left top, rgba(245, 165, 3, 0) 0.48544em, #f5a503 0.48544em, #f5a503, #c38302 1.31877em, rgba(245, 165, 3, 0) 1.31877em) 0 1em, linear-gradient(to right bottom, rgba(245, 165, 3, 0) 0.48544em, #c38302 0.48544em, #f5a503, #f5a503 1.31877em, rgba(245, 165, 3, 0) 1.31877em) 2.5em 1em, linear-gradient(to left bottom, rgba(245, 165, 3, 0) 0.48544em, #c38302 0.48544em, #f5a503, #f5a503 1.31877em, rgba(245, 165, 3, 0) 1.31877em) 2.5em 1em, linear-gradient(to right top, rgba(233, 241, 223, 0) 0.48544em, #e9f1df 0.48544em, #e9f1df, #c4daaa 1.31877em, rgba(233, 241, 223, 0) 1.31877em) 0 2em, linear-gradient(to left top, rgba(233, 241, 223, 0) 0.48544em, #e9f1df 0.48544em, #e9f1df, #c4daaa 1.31877em, rgba(233, 241, 223, 0) 1.31877em) 0 2em, linear-gradient(to right bottom, rgba(233, 241, 223, 0) 0.48544em, #c4daaa 0.48544em, #e9f1df, #e9f1df 1.31877em, rgba(233, 241, 223, 0) 1.31877em) 2.5em 2em, linear-gradient(to left bottom, rgba(233, 241, 223, 0) 0.48544em, #c4daaa 0.48544em, #e9f1df, #e9f1df 1.31877em, rgba(233, 241, 223, 0) 1.31877em) 2.5em 2em, linear-gradient(to right top, rgba(74, 217, 217, 0) 0.48544em, #4ad9d9 0.48544em, #4ad9d9, #25b1b1 1.31877em, rgba(74, 217, 217, 0) 1.31877em) 0 3em, linear-gradient(to left top, rgba(74, 217, 217, 0) 0.48544em, #4ad9d9 0.48544em, #4ad9d9, #25b1b1 1.31877em, rgba(74, 217, 217, 0) 1.31877em) 0 3em, linear-gradient(to right bottom, rgba(74, 217, 217, 0) 0.48544em, #25b1b1 0.48544em, #4ad9d9, #4ad9d9 1.31877em, rgba(74, 217, 217, 0) 1.31877em) 2.5em 3em, linear-gradient(to left bottom, rgba(74, 217, 217, 0) 0.48544em, #25b1b1 0.48544em, #4ad9d9, #4ad9d9 1.31877em, rgba(74, 217, 217, 0) 1.31877em) 2.5em 3em, linear-gradient(to right top, rgba(54, 177, 191, 0) 0.48544em, #36b1bf 0.48544em, #36b1bf, #257a83 1.31877em, rgba(54, 177, 191, 0) 1.31877em) 0 4em, linear-gradient(to left top, rgba(54, 177, 191, 0) 0.48544em, #36b1bf 0.48544em, #36b1bf, #257a83 1.31877em, rgba(54, 177, 191, 0) 1.31877em) 0 4em, linear-gradient(to right bottom, rgba(54, 177, 191, 0) 0.48544em, #257a83 0.48544em, #36b1bf, #36b1bf 1.31877em, rgba(54, 177, 191, 0) 1.31877em) 2.5em 4em, linear-gradient(to left bottom, rgba(54, 177, 191, 0) 0.48544em, #257a83 0.48544em, #36b1bf, #36b1bf 1.31877em, rgba(54, 177, 191, 0) 1.31877em) 2.5em 4em;
+    background-color: linen;
+    background-size: 5em 5em;
+    height: 100%;
+    width: 100%;
+    z-index: 4;
+    position: fixed;
+    top: 0;
+}
+
+footer {
+    bottom: 0px;
+    height: 100px;
+    width: 100%;
+    background: #222222;
+    position: relative;
+}
+
+    footer .right {
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        -webkit-transform: scale(0.4);
+        -moz-transform: scale(0.4);
+        -ms-transform: scale(0.4);
+        -o-transform: scale(0.4);
+        transform: scale(0.4);
+    }
+
+#letter {
+    font-size: 120px;
+    font-family: Helvetica;
+    font-weight: Bold;
+    color: white;
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 120px;
+    position: fixed;
+    top: -145px;
+    left: -112px;
+    margin-top: -60px;
+    margin-left: -60px;
+    opacity: 1;
+    z-index: -1;
+}
+
+#animation {
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    bottom: 45px;
+    right: 0px;
+    z-index: 1;
+}
+
+.base {
+    width: 170px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -85px;
+    margin-top: 95px;
+    background-color: rgba(123,126,129,1);
+    z-index: -1;
+}
+
+    .base:after {
+        border-bottom: 40px solid rgba(193,196,199,1);
+        border-right: 20px solid transparent;
+        border-left: 20px solid transparent;
+        position: absolute;
+        top: -85px;
+        left: 0px;
+        width: 130px;
+        height: 45px;
+        content: "";
+    }
+
+.button {
+    width: 16px;
+    height: 35px;
+    background-color: rgba(23,26,29,0.5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+    -webkit-transform: scale( 1, 0.35 );
+    -moz-transform: scale( 1, 0.35 );
+    -ms-transform: scale( 1, 0.35 );
+    -o-transform: scale( 1, 0.35 );
+    transform: scale( 1, 0.35 );
+    border-radius: 10px;
+}
+
+    .button:after {
+        content: "";
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(255,115,110,1);
+        border-radius: 20px;
+    }
+
+#animation .button:nth-of-type(1) {
+    margin-top: 50px;
+    margin-left: 30px;
+    animation: baseButton 6s ease 0s infinite alternate none;
+    -webkit-animation: baseButton 6s ease 0s infinite alternate none;
+        -moz-animation: baseButton 6s ease 0s infinite alternate none;
+        -ms-animation: baseButton 6s ease 0s infinite alternate none;
+        -o-animation: baseButton 6s ease 0s infinite alternate none;
+}
+
+#animation .button:nth-of-type(2) {
+    margin-top: 55px;
+    margin-left: 50px;
+    animation: baseButton 6.5s ease 2s infinite alternate none;
+    -webkit-animation: baseButton 6.5s ease 2s infinite alternate none;
+    -moz-animation: baseButton 6.5s ease 2s infinite alternate none;
+        -ms-animation: baseButton 6.5s ease 2s infinite alternate none;
+        -o-animation: baseButton 6.5s ease 2s infinite alternate none;
+}
+
+.stick {
+    background-color: rgba(123,126,129,1);
+    width: 22px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -11px;
+    margin-top: -65px;
+    z-index: 10;
+    -webkit-transform-origin: center 180px;
+    -moz-transform-origin: center 180px;
+        -ms-transform-origin: center 180px;
+        -o-transform-origin: center 180px;
+    transform-origin: center 180px;
+    animation: stick 7s ease-in-out 0s infinite alternate none;
+    -webkit-animation: stick 7s ease-in-out 0s infinite alternate none;
+    -moz-animation: stick 7s ease-in-out 0s infinite alternate none;
+        -ms-animation: stick 7s ease-in-out 0s infinite alternate none;
+        -o-animation: stick 7s ease-in-out 0s infinite alternate none;
+}
+
+    .stick:after {
+        -webkit-transform: scale( 1, 0.25 );
+        -moz-transform: scale( 1, 0.25 );
+        -ms-transform: scale( 1, 0.25 );
+        -o-transform: scale( 1, 0.25 );
+        transform: scale( 1, 0.25 );
+        background-color: rgba(193,196,199,1);
+        border-radius: 34px;
+        position: absolute;
+        top: -11px;
+        left: 0;
+        width: 22px;
+        height: 22px;
+        content: "";
+    }
+
+    .stick:before {
+        -webkit-transform: scale( 1, 0.35 );
+        -moz-transform: scale( 1, 0.35 );
+        -ms-transform: scale( 1, 0.35 );
+        -o-transform: scale( 1, 0.35 );
+        transform: scale( 1, 0.35 );
+        background-color: rgba(123,126,129,1);
+        border-radius: 34px;
+        position: absolute;
+        top: 90px;
+        left: 0;
+        width: 22px;
+        height: 22px;
+        content: "";
+    }
+
+    .stick .topButton {
+        width: 16px;
+        height: 35px;
+        background-color: rgba(103,106,109,1);
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        -webkit-transform-origin: center bottom;
+        transform-origin: center bottom;
+        -webkit-transform: scale( 1, 0.25 );
+        -moz-transform: scale( 1, 0.25 );
+        -ms-transform: scale( 1, 0.25 );
+        -o-transform: scale( 1, 0.25 );
+        transform: scale( 1, 0.25 );
+        border-radius: 10px;
+        margin-left: 3px;
+        margin-top: -34px;
+        z-index: 20;
+        animation: baseButton 3.5s ease -2s infinite alternate forwards;
+        -webkit-animation: baseButton 3.5s ease -2s infinite alternate forwards;
+        -moz-animation: baseButton 3.5s ease -2s infinite alternate forwards;
+        -ms-animation: baseButton 3.5s ease -2s infinite alternate forwards;
+        -o-animation: baseButton 3.5s ease -2s infinite alternate forwards;
+    }
+
+        .stick .topButton:after {
+            content: "";
+            width: 16px;
+            height: 16px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgba(255,115,110,1);
+            border-radius: 20px;
+        }
+
+    .stick .bottom {
+        -webkit-transform: scale( 1, 0.55 );
+        -moz-transform: scale( 1, 0.55 );
+        -ms-transform: scale( 1, 0.55 );
+        -o-transform: scale( 1, 0.55 );
+        transform: scale( 1, 0.55 );
+        width: 16px;
+        height: 35px;
+        border-radius: 20px;
+        position: absolute;
+        bottom: -25px;
+        left: 3px;
+        z-index: -1;
+        background-color: rgba(83,86,89,1);
+    }
+
+    .stick .support {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        bottom: -41px;
+        left: -9px;
+        background-color: rgba(48,50,54,1);
+        border-radius: 80px;
+        -webkit-transform: scale( 1, 0.45 );
+        -moz-transform: scale( 1, 0.45 );
+        -ms-transform: scale( 1, 0.45 );
+        -o-transform: scale( 1, 0.45 );
+        transform: scale( 1, 0.45 );
+        z-index: -5;
+    }
+
+.rubber {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 50%;
+    left: 50%;
+    margin-left: -40px;
+    margin-top: 25px;
+    background-color: rgba(38,42,46,1);
+    border-radius: 80px;
+    transform: scale( 1, 0.35 );
+    -webkit-transform: scale( 1, 0.35 );
+    -moz-transform: scale( 1, 0.35 );
+    -ms-transform: scale( 1, 0.35 );
+    -o-transform: scale( 1, 0.35 );
+    z-index: 1;
+}
+
+@keyframes baseButton {
+    64% {
+        transform: scale( 1, 0.35 );
+    }
+
+    62% {
+        transform: scale( 1, 0.15 );
+    }
+
+    60% {
+        transform: scale( 1, 0.35 );
+    }
+
+    100% {
+        transform: scale( 1, 0.15 );
+    }
+
+    18% {
+        transform: scale( 1, 0.35 );
+    }
+
+    16% {
+        transform: scale( 1, 0.15 );
+    }
+
+    0% {
+        transform: scale( 1, 0.35 );
+    }
+
+    98% {
+        transform: scale( 1, 0.35 );
+    }
+
+    14% {
+        transform: scale( 1, 0.35 );
+    }
+
+    10% {
+        transform: scale( 1, 0.35 );
+    }
+
+    12% {
+        transform: scale( 1, 0.15 );
+    }
+}
+@-webkit-keyframes baseButton {
+    64% {
+        -webkit-transform: scale( 1, 0.35 );
+    }
+
+    62% {
+        -webkit-transform: scale( 1, 0.15 );
+    }
+
+    60% {
+        -webkit-transform: scale( 1, 0.35 );
+    }
+
+    100% {
+        -webkit-transform: scale( 1, 0.15 );
+    }
+
+    18% {
+        -webkit-transform: scale( 1, 0.35 );
+    }
+
+    16% {
+        -webkit-transform: scale( 1, 0.15 );
+    }
+
+    0% {
+        -webkit-transform: scale( 1, 0.35 );
+    }
+
+    98% {
+        -webkit-transform: scale( 1, 0.35 );
+    }
+
+    14% {
+        -webkit-transform: scale( 1, 0.35 );
+    }
+
+    10% {
+        -webkit-transform: scale( 1, 0.35 );
+    }
+
+    12% {
+        -webkit-transform: scale( 1, 0.15 );
+    }
+}
+@-moz-keyframes baseButton {
+    64% {
+        -moz-transform: scale( 1, 0.35 );
+    }
+
+    62% {
+        -moz-transform: scale( 1, 0.15 );
+    }
+
+    60% {
+        -moz-transform: scale( 1, 0.35 );
+    }
+
+    100% {
+        -moz-transform: scale( 1, 0.15 );
+    }
+
+    18% {
+        -moz-transform: scale( 1, 0.35 );
+    }
+
+    16% {
+        -moz-transform: scale( 1, 0.15 );
+    }
+
+    0% {
+        -moz-transform: scale( 1, 0.35 );
+    }
+
+    98% {
+        -moz-transform: scale( 1, 0.35 );
+    }
+
+    14% {
+        -moz-transform: scale( 1, 0.35 );
+    }
+
+    10% {
+        -moz-transform: scale( 1, 0.35 );
+    }
+
+    12% {
+        -moz-transform: scale( 1, 0.15 );
+    }
+}
+@-ms-keyframes baseButton {
+    64% {
+        -ms-transform: scale( 1, 0.35 );
+    }
+
+    62% {
+        -ms-transform: scale( 1, 0.15 );
+    }
+
+    60% {
+        -ms-transform: scale( 1, 0.35 );
+    }
+
+    100% {
+        -ms-transform: scale( 1, 0.15 );
+    }
+
+    18% {
+        -ms-transform: scale( 1, 0.35 );
+    }
+
+    16% {
+        -ms-transform: scale( 1, 0.15 );
+    }
+
+    0% {
+        -ms-transform: scale( 1, 0.35 );
+    }
+
+    98% {
+        -ms-transform: scale( 1, 0.35 );
+    }
+
+    14% {
+        -ms-transform: scale( 1, 0.35 );
+    }
+
+    10% {
+        -ms-transform: scale( 1, 0.35 );
+    }
+
+    12% {
+        -ms-transform: scale( 1, 0.15 );
+    }
+}
+@-o-keyframes baseButton {
+    64% {
+        -o-transform: scale( 1, 0.35 );
+    }
+
+    62% {
+        -o-transform: scale( 1, 0.15 );
+    }
+
+    60% {
+        -o-transform: scale( 1, 0.35 );
+    }
+
+    100% {
+        -o-transform: scale( 1, 0.15 );
+    }
+
+    18% {
+        -o-transform: scale( 1, 0.35 );
+    }
+
+    16% {
+        -o-transform: scale( 1, 0.15 );
+    }
+
+    0% {
+        -o-transform: scale( 1, 0.35 );
+    }
+
+    98% {
+        -o-transform: scale( 1, 0.35 );
+    }
+
+    14% {
+        -o-transform: scale( 1, 0.35 );
+    }
+
+    10% {
+        -o-transform: scale( 1, 0.35 );
+    }
+
+    12% {
+        -o-transform: scale( 1, 0.15 );
+    }
+}
+
+@keyframes stick {
+    5% {
+        transform: rotate( 20deg );
+    }
+
+    100% {
+        transform: rotate( -5deg );
+    }
+
+    97% {
+        transform: rotate( 20deg );
+    }
+
+    94% {
+        transform: rotate( 0deg );
+    }
+
+    87% {
+        transform: rotate( -5deg );
+    }
+
+    84% {
+        transform: rotate( 20deg );
+    }
+
+    82% {
+        transform: rotate( 5deg );
+    }
+
+    74% {
+        transform: rotate( 5deg );
+    }
+
+    68% {
+        transform: rotate( -20deg );
+    }
+
+    65% {
+        transform: rotate( 0deg );
+    }
+
+    53% {
+        transform: rotate( 6deg );
+    }
+
+    50% {
+        transform: rotate( 10deg );
+    }
+
+    48% {
+        transform: rotate( -5deg );
+    }
+
+    47% {
+        transform: rotate( 0deg );
+    }
+
+    42% {
+        transform: rotate( -15deg );
+    }
+
+    40% {
+        transform: rotate( 0deg );
+    }
+
+    33% {
+        transform: rotate( 0deg );
+    }
+
+    22% {
+        transform: rotate( 10deg );
+    }
+
+    17% {
+        transform: rotate( 0deg );
+    }
+
+    0% {
+        transform: rotate( -5deg );
+    }
+}
+@-webkit-keyframes stick {
+    5% {
+        -webkit-transform: rotate( 20deg );
+    }
+
+    100% {
+        -webkit-transform: rotate( -5deg );
+    }
+
+    97% {
+        -webkit-transform: rotate( 20deg );
+    }
+
+    94% {
+        -webkit-transform: rotate( 0deg );
+    }
+
+    87% {
+        -webkit-transform: rotate( -5deg );
+    }
+
+    84% {
+        -webkit-transform: rotate( 20deg );
+    }
+
+    82% {
+        -webkit-transform: rotate( 5deg );
+    }
+
+    74% {
+        -webkit-transform: rotate( 5deg );
+    }
+
+    68% {
+        -webkit-transform: rotate( -20deg );
+    }
+
+    65% {
+        -webkit-transform: rotate( 0deg );
+    }
+
+    53% {
+        -webkit-transform: rotate( 6deg );
+    }
+
+    50% {
+        -webkit-transform: rotate( 10deg );
+    }
+
+    48% {
+        -webkit-transform: rotate( -5deg );
+    }
+
+    47% {
+        -webkit-transform: rotate( 0deg );
+    }
+
+    42% {
+        -webkit-transform: rotate( -15deg );
+    }
+
+    40% {
+        -webkit-transform: rotate( 0deg );
+    }
+
+    33% {
+        -webkit-transform: rotate( 0deg );
+    }
+
+    22% {
+        -webkit-transform: rotate( 10deg );
+    }
+
+    17% {
+        -webkit-transform: rotate( 0deg );
+    }
+
+    0% {
+        -webkit-transform: rotate( -5deg );
+    }
+}
+@-moz-keyframes stick {
+    5% {
+        -moz-transform: rotate( 20deg );
+    }
+
+    100% {
+        -moz-transform: rotate( -5deg );
+    }
+
+    97% {
+        -moz-transform: rotate( 20deg );
+    }
+
+    94% {
+        -moz-transform: rotate( 0deg );
+    }
+
+    87% {
+        -moz-transform: rotate( -5deg );
+    }
+
+    84% {
+        -moz-transform: rotate( 20deg );
+    }
+
+    82% {
+        -moz-transform: rotate( 5deg );
+    }
+
+    74% {
+        -moz-transform: rotate( 5deg );
+    }
+
+    68% {
+        -moz-transform: rotate( -20deg );
+    }
+
+    65% {
+        -moz-transform: rotate( 0deg );
+    }
+
+    53% {
+        -moz-transform: rotate( 6deg );
+    }
+
+    50% {
+        -moz-transform: rotate( 10deg );
+    }
+
+    48% {
+        -moz-transform: rotate( -5deg );
+    }
+
+    47% {
+        -moz-transform: rotate( 0deg );
+    }
+
+    42% {
+        -moz-transform: rotate( -15deg );
+    }
+
+    40% {
+        -moz-transform: rotate( 0deg );
+    }
+
+    33% {
+        -moz-transform: rotate( 0deg );
+    }
+
+    22% {
+        -moz-transform: rotate( 10deg );
+    }
+
+    17% {
+        -moz-transform: rotate( 0deg );
+    }
+
+    0% {
+        -moz-transform: rotate( -5deg );
+    }
+}
+@-ms-keyframes stick {
+    5% {
+        -ms-transform: rotate( 20deg );
+    }
+
+    100% {
+        -ms-transform: rotate( -5deg );
+    }
+
+    97% {
+        -ms-transform: rotate( 20deg );
+    }
+
+    94% {
+        -ms-transform: rotate( 0deg );
+    }
+
+    87% {
+        -ms-transform: rotate( -5deg );
+    }
+
+    84% {
+        -ms-transform: rotate( 20deg );
+    }
+
+    82% {
+        -ms-transform: rotate( 5deg );
+    }
+
+    74% {
+        -ms-transform: rotate( 5deg );
+    }
+
+    68% {
+        -ms-transform: rotate( -20deg );
+    }
+
+    65% {
+        -ms-transform: rotate( 0deg );
+    }
+
+    53% {
+        -ms-transform: rotate( 6deg );
+    }
+
+    50% {
+        -ms-transform: rotate( 10deg );
+    }
+
+    48% {
+        -ms-transform: rotate( -5deg );
+    }
+
+    47% {
+        -ms-transform: rotate( 0deg );
+    }
+
+    42% {
+        -ms-transform: rotate( -15deg );
+    }
+
+    40% {
+        -ms-transform: rotate( 0deg );
+    }
+
+    33% {
+        -ms-transform: rotate( 0deg );
+    }
+
+    22% {
+        -ms-transform: rotate( 10deg );
+    }
+
+    17% {
+        -ms-transform: rotate( 0deg );
+    }
+
+    0% {
+        -ms-transform: rotate( -5deg );
+    }
+}
+@-o-keyframes stick {
+    5% {
+        -o-transform: rotate( 20deg );
+    }
+
+    100% {
+        -o-transform: rotate( -5deg );
+    }
+
+    97% {
+        -o-transform: rotate( 20deg );
+    }
+
+    94% {
+        -o-transform: rotate( 0deg );
+    }
+
+    87% {
+        -o-transform: rotate( -5deg );
+    }
+
+    84% {
+        -o-transform: rotate( 20deg );
+    }
+
+    82% {
+        -o-transform: rotate( 5deg );
+    }
+
+    74% {
+        -o-transform: rotate( 5deg );
+    }
+
+    68% {
+        -o-transform: rotate( -20deg );
+    }
+
+    65% {
+        -o-transform: rotate( 0deg );
+    }
+
+    53% {
+        -o-transform: rotate( 6deg );
+    }
+
+    50% {
+        -o-transform: rotate( 10deg );
+    }
+
+    48% {
+        -o-transform: rotate( -5deg );
+    }
+
+    47% {
+        -o-transform: rotate( 0deg );
+    }
+
+    42% {
+        -o-transform: rotate( -15deg );
+    }
+
+    40% {
+        -o-transform: rotate( 0deg );
+    }
+
+    33% {
+        -o-transform: rotate( 0deg );
+    }
+
+    22% {
+        -o-transform: rotate( 10deg );
+    }
+
+    17% {
+        -o-transform: rotate( 0deg );
+    }
+
+    0% {
+        -o-transform: rotate( -5deg );
+    }
+}

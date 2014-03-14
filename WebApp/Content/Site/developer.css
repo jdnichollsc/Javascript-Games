@@ -1,0 +1,58 @@
+﻿@-webkit-keyframes dash {
+    to {
+        stroke-dashoffset: 2637;
+    }
+}
+
+@-moz-keyframes dash {
+    to {
+        stroke-dashoffset: 2637;
+    }
+}
+
+@-o-keyframes dash {
+    to {
+        stroke-dashoffset: 2637;
+    }
+}
+
+@keyframes dash {
+    to {
+        stroke-dashoffset: 2637;
+    }
+}
+
+.dash:hover .hexagon {
+    stroke: #38985A;
+    stroke-dasharray: 629px;
+    stroke-linecap: round;
+    stroke-width: 20;
+    stroke-linejoin: round;
+    stroke-dashoffset: 120;
+    -webkit-animation: dash 4s ease-in-out infinite;
+    -moz-animation: dash 4s ease-in-out infinite;
+    -o-animation: dash 4s ease-in-out infinite;
+    animation: dash 4s ease-in-out infinite;
+}
+
+.grid {
+    margin: 0 0 5px 0;
+    max-width: 818px;
+    position: absolute;
+    top: 150px;
+    text-align: center;
+}
+
+.svg-container {
+    position: relative;
+    height: 270px;
+    width: 270px;
+    display: inline-block;
+    z-index: 2;
+}
+
+    .svg-container h2 {
+        text-align: center;
+        white-space: nowrap;
+        margin: 0;
+    }

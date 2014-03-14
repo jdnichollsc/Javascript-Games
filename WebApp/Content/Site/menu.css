@@ -1,0 +1,395 @@
+﻿a, li {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+
+/* Global CSS that are applied for all screen sizes */
+
+.nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+.nav li span {
+    display: block;
+}
+
+.nav a {
+    display: block;
+    color: rgba(249, 249, 249, .9);
+    text-decoration: none;
+    -webkit-transition: color .5s, background .5s, height .5s;
+    -moz-transition: color .5s, background .5s, height .5s;
+    -o-transition: color .5s, background .5s, height .5s;
+    -ms-transition: color .5s, background .5s, height .5s;
+    transition: color .5s, background .5s, height .5s;
+}
+
+/* Remove the blue Webkit background when element is tapped */
+
+a, button {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+/* Hover effect for the whole navigation to make the hovered item stand out */
+
+.no-touch .nav ul:hover a {
+    color: rgba(249, 249, 249, .5);
+}
+
+    .no-touch .nav ul:hover a:hover {
+        color: rgba(249, 249, 249, 0.99);
+    }
+
+/* Adding some background color to the different menu items */
+
+.nav li:nth-child(6n+1) {
+    background: rgb(208, 101, 3);
+}
+
+.nav li:nth-child(6n+2) {
+    background: rgb(233, 147, 26);
+}
+
+.nav li:nth-child(6n+3) {
+    background: rgb(22, 145, 190);
+}
+
+.nav li:nth-child(6n+4) {
+    background: rgb(22, 107, 162);
+}
+
+.nav li:nth-child(6n+5) {
+    background: rgb(27, 54, 71);
+}
+
+.nav li:nth-child(6n+6) {
+    background: rgb(21, 40, 54);
+}
+
+/* For screen bigger than 800px */
+@media (min-width: 50em) {
+
+    /* Transforms the list into a horizontal navigation */
+    .nav li {
+        float: left;
+        width: 16.66666666666667%;
+        text-align: center;
+        -webkit-transition: border .5s;
+        -moz-transition: border .5s;
+        -o-transition: border .5s;
+        -ms-transition: border .5s;
+        transition: border .5s;
+    }
+
+    .nav a {
+        display: block;
+        width: auto;
+    }
+
+    /* hover, focused and active effects that add a little colored border to the different items */
+    .no-touch .nav li:nth-child(6n+1) a:hover,
+    .no-touch .nav li:nth-child(6n+1) a:active,
+    .no-touch .nav li:nth-child(6n+1) a:focus {
+        border-bottom: 4px solid rgb(174, 78, 1);
+    }
+
+    .no-touch .nav li:nth-child(6n+2) a:hover,
+    .no-touch .nav li:nth-child(6n+2) a:active,
+    .no-touch .nav li:nth-child(6n+2) a:focus {
+        border-bottom: 4px solid rgb(191, 117, 20);
+    }
+
+    .no-touch .nav li:nth-child(6n+3) a:hover,
+    .no-touch .nav li:nth-child(6n+3) a:active,
+    .no-touch .nav li:nth-child(6n+3) a:focus {
+        border-bottom: 4px solid rgb(12, 110, 149);
+    }
+
+    .no-touch .nav li:nth-child(6n+4) a:hover,
+    .no-touch .nav li:nth-child(6n+4) a:active,
+    .no-touch .nav li:nth-child(6n+4) a:focus {
+        border-bottom: 4px solid rgb(10, 75, 117);
+    }
+
+    .no-touch .nav li:nth-child(6n+5) a:hover,
+    .no-touch .nav li:nth-child(6n+5) a:active,
+    .no-touch .nav li:nth-child(6n+5) a:focus {
+        border-bottom: 4px solid rgb(16, 34, 44);
+    }
+
+    .no-touch .nav li:nth-child(6n+6) a:hover,
+    .no-touch .nav li:nth-child(6n+6) a:active,
+    .no-touch .nav li:nth-child(6n+6) a:focus {
+        border-bottom: 4px solid rgb(9, 18, 25);
+    }
+
+    /* Placing the icon */
+
+    .icon {
+        padding-top: 1.4em;
+    }
+
+        .icon + span {
+            margin-top: 0;
+            -webkit-transition: margin .5s;
+            -moz-transition: margin .5s;
+            -o-transition: margin .5s;
+            -ms-transition: margin .5s;
+            transition: margin .5s;
+            font-family: 'Holtwood One SC', serif;
+        }
+
+    /* Animating the height of the element*/
+    .nav a {
+        height: 6em;
+    }
+
+        .no-touch .nav a:hover,
+        .nav a:active,
+        .nav a:focus {
+            height: 7em;
+        }
+
+            /* Making the text follow the height animation */
+            .no-touch .nav a:hover .icon + span {
+                margin-top: 1.1em;
+                -webkit-transition: margin .5s;
+                -moz-transition: margin .5s;
+                -o-transition: margin .5s;
+                -ms-transition: margin .5s;
+                transition: margin .5s;
+            }
+}
+
+@media (min-width: 50em) and (max-width: 61.250em) {
+
+    /* Size and font adjustments to make it fit into the screen*/
+    .nav ul {
+        font-size: 1.1em;
+    }
+
+    .icon img {
+        height: 52px;
+    }
+}
+
+/* The "tablet" and "mobile" version */
+
+@media (max-width: 49.938em) {
+
+    /* Instead of adding a border, we transition the background color */
+    .no-touch .nav ul li:nth-child(6n+1) a:hover,
+    .no-touch .nav ul li:nth-child(6n+1) a:active,
+    .no-touch .nav ul li:nth-child(6n+1) a:focus {
+        background: rgb(227, 119, 20);
+    }
+
+    .no-touch .nav li:nth-child(6n+2) a:hover,
+    .no-touch .nav li:nth-child(6n+2) a:active,
+    .no-touch .nav li:nth-child(6n+2) a:focus {
+        background: rgb(245, 160, 41);
+    }
+
+    .no-touch .nav li:nth-child(6n+3) a:hover,
+    .no-touch .nav li:nth-child(6n+3) a:active,
+    .no-touch .nav li:nth-child(6n+3) a:focus {
+        background: rgb(44, 168, 219);
+    }
+
+    .no-touch .nav li:nth-child(6n+4) a:hover,
+    .no-touch .nav li:nth-child(6n+4) a:active,
+    .no-touch .nav li:nth-child(6n+4) a:focus {
+        background: rgb(31, 120, 176);
+    }
+
+    .no-touch .nav li:nth-child(6n+5) a:hover,
+    .no-touch .nav li:nth-child(6n+5) a:active,
+    .no-touch .nav li:nth-child(6n+5) a:focus {
+        background: rgb(39, 70, 90);
+    }
+
+    .no-touch .nav li:nth-child(6n+6) a:hover,
+    .no-touch .nav li:nth-child(6n+6) a:active,
+    .no-touch .nav li:nth-child(6n+6) a:focus {
+        background: rgb(32, 54, 68);
+    }
+
+    .nav ul li {
+        -webkit-transition: background 0.5s;
+        -moz-transition: background 0.5s;
+        -o-transition: background 0.5s;
+        -ms-transition: background 0.5s;
+        transition: background 0.5s;
+    }
+}
+
+/* Styling the toggle menu link and hiding it */
+.nav .navtoogle {
+    display: none;
+    width: 100%;
+    padding: 0.5em 0.5em 0.8em;
+    font-family: 'Lato',Calibri,Arial,sans-serif;
+    font-weight: normal;
+    text-align: left;
+    color: rgb(7, 16, 15);
+    font-size: 1.2em;
+    background: none;
+    border: none;
+    border-bottom: 4px solid rgb(221, 221, 221);
+    cursor: pointer;
+    z-index: 4;
+    background-color: white;
+}
+
+.navtoogle i {
+    z-index: -1;
+}
+
+.icon-menu {
+    position: relative;
+    top: 3px;
+    line-height: 0;
+    font-size: 1.6em;
+}
+
+@media (max-width: 49.938em) {
+
+    /* Unhiding the styled menu link */
+    .nav .navtoogle {
+        margin: 0;
+        display: block;
+    }
+
+    /* Animating the height of the navigation when the button is clicked */
+
+    /* When JavaScript is disabled, we hide the menu */
+    .no-js .nav ul {
+        max-height: 30em;
+        overflow: hidden;
+    }
+
+    /* When JavaScript is enabled, we hide the menu */
+    .js .nav ul {
+        max-height: 0em;
+        overflow: hidden;
+    }
+
+    /* Displaying the menu when the user has clicked on the button*/
+    .js .nav .active + ul {
+        max-height: 30em;
+        overflow: hidden;
+        -webkit-transition: max-height .4s;
+        -moz-transition: max-height .4s;
+        -o-transition: max-height .4s;
+        -ms-transition: max-height .4s;
+        transition: max-height .4s;
+    }
+
+    /* Adapting the layout of the menu for smaller screens : icon on the left and text on the right*/
+
+    .nav li span {
+        display: inline-block;
+        height: 100%;
+        text-align: left;
+        width: 87px;
+    }
+    .nav li span.icon {
+        text-align: center;
+    }
+
+    .nav a {
+        padding: 0.5em;
+    }
+
+    .icon + span {
+        margin-left: 1em;
+        font-size: 0.8em;
+    }
+
+    /* Adding a left border of 8 px with a different color for each menu item*/
+    .nav li:nth-child(6n+1) {
+        border-left: 8px solid rgb(174, 78, 1);
+    }
+
+    .nav li:nth-child(6n+2) {
+        border-left: 8px solid rgb(191, 117, 20);
+    }
+
+    .nav li:nth-child(6n+3) {
+        border-left: 8px solid rgb(13, 111, 150);
+    }
+
+    .nav li:nth-child(6n+4) {
+        border-left: 8px solid rgb(10, 75, 117);
+    }
+
+    .nav li:nth-child(6n+5) {
+        border-left: 8px solid rgb(16, 34, 44);
+    }
+
+    .nav li:nth-child(6n+6) {
+        border-left: 8px solid rgb(9, 18, 25);
+    }
+
+    /* make the nav bigger on touch screens */
+    .touch .nav a {
+        padding: 0.8em;
+    }
+}
+@media screen and (max-width : 430px) {
+    header h1 {
+        font-size: 32px;
+        text-align: center;
+    }
+}
+@media screen and (min-width: 431px) and (max-width : 1069px) {
+    header h1 {
+        text-align: center;
+    }
+}
+@media screen and (max-width : 1069px) {
+    .righthead {
+        top: 0px;
+        right: 0px;
+        position: relative;
+        width: auto;
+        text-align: center;
+    }
+
+    .searchterm {
+        width: 80%;
+        max-width: 380px;
+        display: inline;
+        position: relative;
+    }
+
+    .srchFld {
+        width: 100%;
+        max-width: 380px;
+        float: initial;
+    }
+
+    .ico {
+        right: 5px;
+    }
+}
+
+@media screen and (min-width : 800px) and (max-width : 1084px) {
+    .icon + span {
+        font-size: 10px;
+    }
+}
+@media screen and (min-width : 1085px) and (max-width : 1294px) {
+    .icon + span {
+        font-size: 15px;
+    }
+}
+@media screen and (min-width : 1295px) {
+    .icon + span {
+        font-size: 18px;
+    }
+}
