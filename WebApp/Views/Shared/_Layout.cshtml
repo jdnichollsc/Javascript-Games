@@ -14,48 +14,39 @@
             display: inline-flex;
         }
 
-        .fields, .loginbuttons {
-            float: left;
-            height: 100px;
-        }
-
         .fields {
             width: 75%;
-            height: auto;
+            float: left;
+            display: inline;
         }
 
-            .fields .field {
-                height: 40%;
+            .fields input {
+                float: right;
+                border: 0;
+                border-radius: 7px;
+                padding: 0 17px;
+                border-bottom: 5px solid #bdc3c7;
+                height: 30px;
+                font-family: 'Roboto',sans-serif;
+                color: #7f8c8d;
+                font-size: 19px;
+                margin-top: 5px;
+                margin-left: 5px;
             }
 
-        .field label {
-            float: left;
-            font-family: 'Holtwood One SC',serif;
-            color: #fff;
-            margin-top:7px;
-        }
-
-        .field input {
-            float: right;
-            border: 0;
-            border-radius: 7px;
-            padding: 0 17px;
-            border-bottom: 5px solid #bdc3c7;
-            height: 30px;
-            font-family: 'Roboto',sans-serif;
-            color: #7f8c8d;
-            font-size: 19px;
-            margin-top: 5px;
-        }
-
-        .loginbuttons {
-            width: 25%;
-        }
         #login img {
             top: -4px;
             display: inline-block;
             position: relative;
         }
+        .loginbuttons {
+            top: 5px;
+            position: relative;
+            float: left;
+        }
+            .loginbuttons img {
+                width: 30px;
+            }
     </style>
 </head>
 <body>
@@ -74,12 +65,8 @@
             </div>
             <div class="login" style="display:none;">
                 <div class="fields">
-                    <div class="field">
-                        <label for="user">Usuario:</label><input id="user" name="user" type="text">
-                    </div>
-                    <div class="field">
-                        <label for="password">Clave:</label><input id="password" name="password" type="password">
-                    </div>
+                    <input id="user" name="user" type="text" placeholder="Usuario">
+                    <input id="password" name="password" type="password" placeholder="Clave">
                 </div>
                 <div class="loginbuttons">
                     <a id="loginnext" href="#"><img src="~/Content/img/next.png" /></a>
@@ -171,7 +158,7 @@
             $("body").niceScroll({ styler: "fb", cursorcolor: "#000", horizrailenabled: false, zindex: 9999 });
         });
         $("#login").on("click", function () {
-            $(".righthead").animate({ "right": "-500px" }, "slow", function () {
+            $(".righthead").animate({ "right": -$(window).width() + "px" }, "slow", function () {
                 $(".search").hide();
                 $(".login").show();
                 $(".righthead").animate({ "right": "0px" }, "slow");
@@ -179,7 +166,7 @@
             return false;
         });
         $("#loginstop").on("click", function () {
-            $(".righthead").animate({ "right": "-500px" }, "slow", function () {
+            $(".righthead").animate({ "right": -$(window).width() + "px" }, "slow", function () {
                 $(".login").hide();
                 $(".search").show();
                 $(".righthead").animate({ "right": "0px" }, "slow");
