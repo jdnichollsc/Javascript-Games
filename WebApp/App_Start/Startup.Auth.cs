@@ -20,19 +20,23 @@ namespace WebApp
             app.UseExternalSignInCookie(DefaultAuthenticationTypes.ExternalCookie);
 
             // Quitar los comentarios de las siguientes líneas para habilitar el inicio de sesión con proveedores de inicio de sesión de terceros
-            //app.UseMicrosoftAccountAuthentication(
-            //    clientId: "",
-            //    clientSecret: "");
 
-            //app.UseTwitterAuthentication(
-            //   consumerKey: "",
-            //   consumerSecret: "");
+            // Microsoft => https://account.live.com/developers/applications
+            app.UseMicrosoftAccountAuthentication(
+                clientId: "000000004C111F35",
+                clientSecret: "deMeyaE3qw25PVxxH79ndrTfwyeVk9Ua");
 
-            //app.UseFacebookAuthentication(
-            //   appId: "",
-            //   appSecret: "");
+            // Twitter => https://dev.twitter.com/
+            app.UseTwitterAuthentication(
+               consumerKey: "ZfAxJLtSy18Vc3ueOOA76w",
+               consumerSecret: "EpEGdYKF2emLS6eouoPeiJe6tJi5C2pSOkBDnbUDKY");
 
-            //app.UseGoogleAuthentication();
+            // Facebook => https://developers.facebook.com/apps/
+            app.UseFacebookAuthentication(
+               appId: "562262000476246",
+               appSecret: "097b95d01c1f6942a3c08560c69a8848");
+
+            app.UseGoogleAuthentication();
         }
     }
 }

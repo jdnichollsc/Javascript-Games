@@ -28,6 +28,7 @@ namespace WebApp
             // Agregamos el Paquete BundleTransformer.Core y con esto podemos agrupar y minimizar el css, incluyendo el css3. Para más info => http://bundletransformer.codeplex.com/
             Bundle coreCSS = new Bundle("~/bundles/css").Include(
                       "~/Content/normalize.css",
+                      "~/Content/bootstrap.min.css",
                       "~/Content/site.css",
                       "~/Content/Site/menu.css",
                       "~/Content/Site/bg.css");

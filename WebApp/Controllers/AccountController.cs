@@ -78,7 +78,19 @@ namespace WebApp.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = new ApplicationUser() { UserName = model.UserName };
+                var user = new ApplicationUser()
+                {
+                    UserName = model.UserName,
+                    FirstName = model.FirstName,
+                    LastName = model.LastName,
+                    Email = model.Email,
+                    Phone = model.Phone,
+                    CellPhone = model.CellPhone,
+                    Gender = model.Gender,
+                    Birthday = model.Birthday,
+                    Address = model.Address,
+                    CreationDate = DateTime.UtcNow.AddHours(-5)
+                };
                 var result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
@@ -265,7 +277,18 @@ namespace WebApp.Controllers
                 {
                     return View("ExternalLoginFailure");
                 }
-                var user = new ApplicationUser() { UserName = model.UserName };
+                var user = new ApplicationUser() { 
+                    UserName = model.UserName,
+                    FirstName = model.FirstName,
+                    LastName = model.LastName,
+                    Email = model.Email,
+                    Phone = model.Phone,
+                    CellPhone = model.CellPhone,
+                    Gender = model.Gender,
+                    Birthday = model.Birthday,
+                    Address = model.Address,
+                    CreationDate = DateTime.UtcNow.AddHours(-5)
+                };
                 var result = await UserManager.CreateAsync(user);
                 if (result.Succeeded)
                 {
