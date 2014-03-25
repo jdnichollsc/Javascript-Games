@@ -13,52 +13,61 @@ namespace WebApp.Models
     //Como por ejemplo un proveedor NoSQL para MongoDb
 
     //IdentityUser utiliza la interfaz IUser(Solo define los campos Id y UserName) y añade los campos PasswordHash y SecurityStamp => Tabla AspNetUsers 
-    public class ApplicationUser : IdentityUser
+    public partial class User : IdentityUser
     {
         //Agregamos los demás campos que necesitemos de nuestros usuarios
-        #region [ Fields ]
-        [StringLength(250)]
-        public string FirstName { get; set; }
+        //#region [ Fields ]
+        //[StringLength(250)]
+        //public string FirstName { get; set; }
 
-        [StringLength(250)]
-        public string LastName { get; set; }
+        //[StringLength(250)]
+        //public string LastName { get; set; }
 
-        [StringLength(250)]
-        public string Email { get; set; }
+        //[StringLength(250)]
+        //public string Email { get; set; }
 
-        [StringLength(20)]
-        public string Phone { get; set; }
+        //[StringLength(20)]
+        //public string Phone { get; set; }
 
-        [StringLength(20)]
-        public string CellPhone { get; set; }
-        
-        public bool Gender { get; set; }
+        //[StringLength(20)]
+        //public string CellPhone { get; set; }
 
-        public DateTime Birthday { get; set; }
+        //public bool Gender { get; set; }
 
-        [StringLength(100)]
-        public string Address { get; set; }
+        //public DateTime Birthday { get; set; }
 
-        public DateTime CreationDate { get; set; }
+        //[StringLength(100)]
+        //public string Address { get; set; }
 
-        #endregion
+        //public DateTime CreationDate { get; set; }
+
+        //#endregion
     }
 
     //Siempre que modificamos nuestro esquema de datos tenemos que actualizarlo en la BBDD, ya sea eliminando las tablas con los datos o realizar Migraciones.
     //Al agregar una nueva migración esta se genera automáticamente comparando el esquema de la BBDD con el que tendría que haber según nuestro Modelo.
 
-    public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
+    public class ApplicationDbContext : IdentityDbContext<User>
     {
         public ApplicationDbContext()
-            : base("DefaultConnection")
+            : base(
+#if DEBUG
+"DebugConnection"
+#else
+            "ReleaseConnection"
+#endif
+              )
         {
         }
+
+        public DbSet<Game> Games { get; set; }
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<IdentityUser>().ToTable("Users").
                 Property(u => u.PasswordHash).HasColumnName("Password");
-            modelBuilder.Entity<ApplicationUser>().ToTable("Users").
+            modelBuilder.Entity<User>().ToTable("Users").
                 Property(u => u.PasswordHash).HasColumnName("Password");
 
             modelBuilder.Entity<IdentityRole>().ToTable("Roles");

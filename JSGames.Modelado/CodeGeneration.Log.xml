@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/PROGRAM FILES (X86)/MICROSOFT VISUAL STUDIO 12.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/ARCHITECTURE TOOLS/EXTENSIBILITY/Logging/CodeGenLog.xslt"?>
+<Log xmlns="http://schemas.microsoft.com/VisualStudio/2010/CodeGen.RE.Log" Label="Registro de generación de código/transformación de texto">
+  <MessageClass Name="Message" Label="Mensaje" Option="Mostrar mensajes informativos" />
+  <MessageClass Name="Warning" Label="Advertencia" Option="Mostrar advertencias" />
+  <MessageClass Name="Error" Label="Error" Option="Mostrar errores" />
+  <MessageClass Name="Property" Label="Propiedad" Option="Mostrar metadatos" />
+  <MessageClass Name="Diagnostic" Label="Mensaje" Option="Mostrar mensajes de diagnóstico" />
+  <Message Timestamp="2014-03-24T23:54:22" Importance="High" Text="Se inició la generación de código o la transformación de texto." />
+  <Message Timestamp="2014-03-24T23:54:23" Importance="Diagnostic" Text="Nombre = ClassTemplate" />
+  <Message Timestamp="2014-03-24T23:54:23" Importance="Diagnostic" Text="Sobrescribir = True" />
+  <Message Timestamp="2014-03-24T23:54:23" Importance="Diagnostic" Text="ProjectPath = ..\WebApp\WebApp.csproj" />
+  <Message Timestamp="2014-03-24T23:54:23" Importance="Diagnostic" Text="TargetDirectory = Models" />
+  <Message Timestamp="2014-03-24T23:54:23" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2014-03-24T23:54:23" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2014-03-24T23:54:23" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2014-03-24T23:54:23" Importance="Medium" Text="Enlace de plantilla de texto de JSGames.Modelado: 'ClassTemplate' aplicará ClassTemplate.t4 a: 'JSGames.Modelado::WebApp.Models::Game' -  (Class), 'JSGames.Modelado::WebApp.Models::User' -  (Class) " />
+  <Message Timestamp="2014-03-24T23:54:23" Importance="Medium" Text="'JSGames.Modelado::WebApp.Models::Game' -  (Class): correcto (archivo reemplazado) - C:\Users\Juan David\Documents\GitHub\Javascript-Games\WebApp\Models\Game.cs" />
+  <Message Timestamp="2014-03-24T23:54:24" Importance="Medium" Text="'JSGames.Modelado::WebApp.Models::User' -  (Class): correcto (archivo reemplazado) - C:\Users\Juan David\Documents\GitHub\Javascript-Games\WebApp\Models\User.cs" />
+  <Message Timestamp="2014-03-24T23:54:24" Importance="Diagnostic" Text="Nombre = StructTemplate" />
+  <Message Timestamp="2014-03-24T23:54:24" Importance="Diagnostic" Text="Sobrescribir = True" />
+  <Message Timestamp="2014-03-24T23:54:24" Importance="Diagnostic" Text="ProjectPath = ..\JSGames.ModeladoLib\JSGames.ModeladoLib.csproj" />
+  <Message Timestamp="2014-03-24T23:54:24" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2014-03-24T23:54:24" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2014-03-24T23:54:24" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2014-03-24T23:54:24" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 12.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2014-03-24T23:54:24" Importance="Medium" Text="Enlace de plantilla de texto de JSGames.Modelado: 'StructTemplate' aplicará StructTemplate.t4 a: 'JSGames.Modelado::WebApp.Models::Game' -  (Class), 'JSGames.Modelado::WebApp.Models::User' -  (Class) " />
+  <Message Timestamp="2014-03-24T23:54:24" Importance="Diagnostic" Text="'JSGames.Modelado::WebApp.Models::Game' -  (Class): no se generó ningún archivo porque el método 'AppliesToElement' de la plantilla 'StructTemplate.t4' se evaluó como false." />
+  <Message Timestamp="2014-03-24T23:54:24" Importance="Diagnostic" Text="'JSGames.Modelado::WebApp.Models::User' -  (Class): no se generó ningún archivo porque el método 'AppliesToElement' de la plantilla 'StructTemplate.t4' se evaluó como false." />
+  <Message Timestamp="2014-03-24T23:54:24" Importance="Diagnostic" Text="La selección incluía 1 elementos que no estaban enlazados a una plantilla." />
+  <Message Timestamp="2014-03-24T23:54:24" Importance="Diagnostic" Text="'JSGames.Modelado::WebApp.Models' -  (Package): sin plantilla enlazada." />
+  <Message Timestamp="2014-03-24T23:54:24" Importance="High" Text="Generación de código completa. Errores: 0. Advertencias: 0." />
+</Log>
